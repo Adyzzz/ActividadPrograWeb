@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    color: #eaf5fa;
+    background-color: #8ecae6;
+  }
+
+
+
+
+
+
+ 
+  header {
+    background-color: #8ecae6;
+    color:  #eaf5fa;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid;
+
+  }
+
+  header a {
+    color: #ffffff;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+main{
+    max-width: 960px;
+    margin: 2 rem auto;
+    padding: 1.5 rem ;
+    background-color: #8ecae6;
+    border-radius: 8px;
+    box-shadow:0 4px 6px;
+
+}
+
+.content p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+  }
+  
+  .tabla th, 
+  .tabla td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .tabla th {
+    background-color: #ffb703;
+    color: #ffffff;
+  }
+  
+  .tabla a {
+    color: #ffb703;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .tabla a:hover {
+    text-decoration: underline;
+  }
+
+  button,
+  .btn {
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    border-radius: 8px;
+    padding: 0.65rem 1.2rem;
+    color: var(--deep);
+    background: var(--amber);
+    transition: background 0.15s;
+  }
+  
+  button:hover,
+  .btn:hover {
+    background: var(--orange);
+  }
+  
+  button.secondary,
+  .btn-secondary {
+    background: var(--blue);
+    color: #fff;
+  }
+  button.secondary:hover,
+  .btn-secondary:hover {
+    background: var(--deep);
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    color: #f5f8f6;
+    font-size: 0.85rem;
+}
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+}
+
+.tarjeta {
+    padding: 1rem;
+    border: 1px solid #fcfcfa;
+    border-radius: 0.5rem;
+    background-color: #8ecae6;
+}
+
+.tarjeta h2{
+    margin-top: 0;
+    font-size: 1.1 rem;
+}
+
+.tarjeta a {
+    color: #faf4f6;
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Talleres</title>
+    <link rel="stylesheet" href="style.css  ">
+</head>
+<body>
+    
+    <header>
+        <h1>Registro de Asistencia a Talleres</h1>
+        <p>Centro de Estudios Cientificos y Tecnológicos "Juan de Dios Bátiz".</p>
+        <nav>
+            <a href="index.html">Volver al Catalogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="">
+            <h2>Completa tus datos</h2>
+
+            <form action="#" method="post" id="form-registro">
+                <div class="">
+                    <label for="nombre">NOMBRE COMPLETO:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="ej. Juan Perez De la cruz" required>
+                </div>
+
+                <div class="">
+                    <label for="boleta">NUMERO DE BOLETA:</label>
+                    <input type="text" id="boleta" name="boleta" pattern="[0-9]{10}" placeholder="10 digitos" required>
+                </div>
+
+                <div class="">
+                    <label for="taller">SELECCIONA EL TALLER:</label>
+                    <select name="taller" id="taller" required>
+                        <option value="" disabled selected>Elije una opción...</option>
+                        <option value="IntroduccionPython">Introducción a Python</option>
+                        <option value="FundamentoRedes">Fundamentos de Redes</option>
+                        <option value="DiseñoBd">Diseño de Base de Datos</option>
+                    </select>
+                </div>
+
+                <button type="submit" class=""> Registrar asistencia</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 CECyT 9, PROYECTO INTEGRADOR GIT.</p>
+    </footer>
+
+</body>
+</html>

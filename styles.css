@@ -1,0 +1,10 @@
+:root {
+    --color-acento-lider: #800040;
+}
+
+.seccion-registro {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 5px solid var(--color-acento-lider);
+}

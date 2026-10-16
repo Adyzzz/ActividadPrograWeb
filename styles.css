@@ -1,0 +1,14 @@
+:root {
+    --color-acento-dev1: #ffb703;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.tarjeta {
+    background: white;
+    padding: 1rem;
+    border-left: 5px solid var(--color-acento-dev1);
+}

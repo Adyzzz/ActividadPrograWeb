@@ -1,5 +1,6 @@
 :root {
     --color-primario: #6b153e; 
+    --color-acento-lider: #800040;
 }
 
 * {
@@ -105,22 +106,6 @@ cursor: not-allowed;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     text-align: center;
     padding: 1rem;
@@ -136,8 +121,6 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-
-
 }
 
 .tarjeta {
@@ -180,4 +163,11 @@ footer{
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
+}
+
+.seccion-registro {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 5px solid var(--color-acento-lider);
 }

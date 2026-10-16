@@ -4,47 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro de Talleres</title>
-    <link rel="stylesheet" href="style.css  ">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <header>
-        <h1>Registro de Asistencia a Talleres</h1>
-        <p>Centro de Estudios Cientificos y Tecnológicos "Juan de Dios Bátiz".</p>
-        <nav>
-            <a href="index.html">Volver al Catalogo</a>
+    <header class="header-principal">
+        <h1 class="titulo-sitio">Registro de Asistencia a Talleres</h1>
+        <p class="subtitulo-sitio">Centro de Estudios Científicos y Tecnológicos "Juan de Dios Bátiz"</p>
+        <nav class="navegacion">
+            <a href="index.html" class="btn-volver">Volver al Catálogo</a>
         </nav>
     </header>
 
-    <main>
-        <section class="">
-            <h2>Completa tus datos</h2>
-
-            <form action="#" method="post" id="form-registro">
-                <div class="">
-                    <label for="nombre">NOMBRE COMPLETO:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="ej. Juan Perez De la cruz" required>
+    <main class="contenedor-principal">
+        <section class="seccion-registro">
+            <h2 class="titulo-seccion">Completa tus datos</h2>
+            
+            <form action="#" method="post" id="form-registro" class="formulario">
+                
+                <div class="grupo-formulario">
+                    <label for="nombre" class="etiqueta">NOMBRE COMPLETO:</label>
+                    <input type="text" id="nombre" name="nombre" class="entrada" placeholder="ej. Ady Esly León Gómez" required>
                 </div>
 
-                <div class="">
-                    <label for="boleta">NUMERO DE BOLETA:</label>
-                    <input type="text" id="boleta" name="boleta" pattern="[0-9]{10}" placeholder="10 digitos" required>
+                <div class="grupo-formulario">
+                    <label for="boleta" class="etiqueta">NUMERO DE BOLETA:</label>
+                    <input type="text" id="boleta" name="boleta" class="entrada" pattern="[0-9]{10}" placeholder="10 digitos" required>
                 </div>
 
-                <div class="">
-                    <label for="taller">SELECCIONA EL TALLER:</label>
-                    <select name="taller" id="taller" required>
+                <div class="grupo-formulario">
+                    <label for="taller" class="etiqueta">SELECCIONA EL TALLER:</label>
+                    <select name="taller" id="taller" class="entrada" required>
                         <option value="" disabled selected>Elije una opción...</option>
                         <option value="IntroduccionPython">Introducción a Python</option>
-                        <option value="FundamentoRedes">Fundamentos de Redes</option>
+                        <option value="FundamentosRedes">Fundamentos de Redes</option>
                         <option value="DiseñoBd">Diseño de Base de Datos</option>
                     </select>
                 </div>
 
-                <button type="submit" class=""> Registrar asistencia</button>
-
+                <button type="submit" class="btn-enviar">Registrar asistencia</button>
             </form>
-
         </section>
     </main>
 

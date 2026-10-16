@@ -11,7 +11,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #8ecae6;
 }
 
 .header-principal {
@@ -21,22 +21,13 @@ body {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-main{
+main {
     max-width: 960px;
-    margin: 2 rem auto;
-    padding: 1.5 rem ;
-    background-color: #8ecae6;
+    margin: 2rem auto; 
+    padding: 1.5rem;   
+    background-color: #7beae4;
     border-radius: 8px;
-    box-shadow:0 4px 6px;
-
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .content p {
@@ -119,55 +110,56 @@ footer{
 
 .catalogo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .tarjeta {
-    padding: 1rem;
-    border: 1px solid #fcfcfa;
-    border-radius: 0.5rem;
-    background-color: #8ecae6;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--color-acento-dev1);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.tarjeta h2{
-    margin-top: 0;
-    font-size: 1.1 rem;
+.tarjeta:hover {
+    transform: translateY(-5px);
 }
 
 .tarjeta a {
-    color: #faf4f6;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: var(--color-acento-dev1);
+    color: white;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .tarjeta a:hover {
     text-decoration: underline;
 }
 
-.tarjeta {
-    background: white;
-    padding: 1rem;
-    border-left: 5px solid var(--color-acento-dev1);
-}
-
 .detalle-taller {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    border: 2px solid var(--color-acento-dev2);
-}
-.tabla {
-    width: 100%;
-    border-collapse: collapse;
-}
-.contenedor-principal {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 8px solid var(--color-acento-dev2);
 }
 
-.seccion-registro {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    border-top: 5px solid var(--color-acento-lider);
+.detalle-taller h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.detalle-taller p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }

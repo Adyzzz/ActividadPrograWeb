@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -137,10 +138,16 @@ footer{
     color: #f5f8f6;
     font-size: 0.85rem;
 }
+
+:root {
+    --color-acento-dev1: #ffb703;
+}
+
 .catalogo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
 
 }
 
@@ -163,4 +170,20 @@ footer{
 
 .tarjeta a:hover {
     text-decoration: underline;
+}
+
+.tarjeta {
+    background: white;
+    padding: 1rem;
+    border-left: 5px solid var(--color-acento-dev1);
+}
+
+.detalle-taller {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 2px solid var(--color-acento-dev2);
+}
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
 }
